@@ -1,4 +1,4 @@
-# RAPO: Safety-First Thinking with SFT-then-RL
+# RAPO: Risk-Aware Preference Optimization for Generalizable Safe Reasoning
 
 This is the repository for the paper **RAPO: Risk-Aware Preference Optimization for Generalizable Safe Reasoning**, by Zeming Wei, Qiaosheng Zhang, Xia Hu, and Xingcheng Xu.
 
