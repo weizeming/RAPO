@@ -1,6 +1,6 @@
 # RAPO: Risk-Aware Preference Optimization for Generalizable Safe Reasoning
 
-This is the repository for the paper **RAPO: Risk-Aware Preference Optimization for Generalizable Safe Reasoning**, by Zeming Wei, Qiaosheng Zhang, Xia Hu, and Xingcheng Xu.
+This is the repository for the [paper](https://openreview.net/forum?id=smLgjabnLP) **RAPO: Risk-Aware Preference Optimization for Generalizable Safe Reasoning** by Zeming Wei, Qiaosheng Zhang, Xia Hu, and Xingcheng Xu, presented at ICLR 2026 Workshop on Trustworthy AI.
 
 ![Method overview](method.png)
 
@@ -86,24 +86,17 @@ Outputs:
 - `--save-path/recipe.json`: records the dataset recipe used for training.
 - `--log-dir/<save_path_basename>.json`: stores per-step prompts/completions and reward breakdowns.
 
-### Hardware / runtime configuration
-This repository does not hardcode GPU selection. Configure GPUs via environment variables, e.g.:
-```bash
-CUDA_VISIBLE_DEVICES=0,1 python rapo_sft.py ...
-```
-
-vLLM-specific parallelism and memory knobs are exposed:
-- SFT: `--tensor-parallel-size`, `--gpu-memory-utilization`
-- RL: `--reward-tensor-parallel-size`, `--reward-gpu-memory-utilization`
 
 
 ### Citation
-If you use this codebase in your research, please cite our paper:
+If you find our work useful, please consider cite our paper:
 ```bibtex
-@article{wei2026rapo,
-  title   = {RAPO: Risk-Aware Preference Optimization for Generalizable Safe Reasoning},
-  author  = {Wei, Zeming and Zhang, Qiaosheng and Hu, Xia and Xu, Xingcheng},
-  journal = {arXiv preprint arXiv:},
-  year    = {2026}
+@inproceedings{
+wei2026rapo,
+title={{RAPO}: Risk-Aware Preference Optimization for Generalizable Safe Reasoning},
+author={Wei, Zeming and Zhang, Qiaosheng and Hu, Xia and Xu, Xingcheng},
+booktitle={ICLR Trustworthy AI Workshop},
+year={2026},
+url={https://openreview.net/forum?id=smLgjabnLP}
 }
 ```
